@@ -1,7 +1,8 @@
 {
-  "name": "example",
+  "name": "eggsse-mongodb",
   "version": "1.0.0",
-  "description": "",
+  "description": "egg template",
+  "homepage": "https://github.com/bfehub/eggsse-mongodb",
   "private": true,
   "egg": {
     "declarations": true
@@ -12,8 +13,8 @@
   "scripts": {
     "prepare": "husky install",
     "commit": "npx git-cz",
-    "start": "egg-scripts start --daemon --title=egg-server-example",
-    "stop": "egg-scripts stop --title=egg-server-example",
+    "start": "egg-scripts start --daemon --title=egg-server-eggsse-mongodb",
+    "stop": "egg-scripts stop --title=egg-server-eggsse-mongodb",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
     "test": "npm run lint -- --fix && npm run test-local",
@@ -21,58 +22,32 @@
     "cov": "egg-bin cov",
     "lint": "eslint .",
     "ci": "npm run lint && npm run cov",
-    "autod": "autod",
-    "release-f": "standard-version -f",
-    "release-major": "standard-version -r major",
-    "release-minor": "standard-version -r minor",
-    "release-patch": "standard-version -r patch"
+    "autod": "autod"
   },
   "dependencies": {
-    "egg": "^2.15.1",
+    "egg": "^2.33.1",
     "egg-bcrypt": "^1.1.0",
     "egg-jwt": "^3.1.7",
-    "egg-mongoose": "^3.2.0",
-    "egg-router-plus": "^1.3.1",
-    "egg-scripts": "^2.11.0",
+    "egg-mongoose": "^3.3.1",
+    "egg-router-plus": "^2.0.0",
+    "egg-scripts": "^2.15.2",
     "egg-swagger-doc": "^2.3.2",
     "egg-validate": "^2.0.2",
-    "egg-view-nunjucks": "^2.2.0"
+    "egg-view-nunjucks": "^2.3.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.1.4",
-    "@commitlint/config-conventional": "^12.1.4",
-    "autod": "^3.0.1",
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/config-conventional": "^16.0.0",
+    "autod": "^3.1.2",
     "autod-egg": "^1.1.0",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
-    "egg-bin": "^4.11.0",
-    "egg-ci": "^1.11.0",
-    "egg-mock": "^3.21.0",
-    "eslint": "^5.13.0",
-    "eslint-config-egg": "^7.1.0",
-    "husky": "^7.0.1",
-    "lint-staged": "^11.0.1",
-    "standard-version": "^9.3.1"
-  },
-  "files": [
-    "dist"
-  ],
-  "keywords": [
-    "example"
-  ],
-  "license": "MIT",
-  "author": "haiweilian@foxmail.com",
-  "bugs": {
-    "url": "https://github.com/haiweilian/example/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/haiweilian/example.git"
-  },
-  "homepage": "https://github.com/haiweilian/example#readme",
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
+    "egg-bin": "^4.17.0",
+    "egg-ci": "^1.19.0",
+    "egg-mock": "^4.2.0",
+    "eslint": "^8.7.0",
+    "eslint-config-egg": "^10.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.2.2"
   }
 }
