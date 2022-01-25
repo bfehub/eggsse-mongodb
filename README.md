@@ -2,10 +2,30 @@
 
 ## Usage
 
-#### 启动服务
+#### db
 
 ```sh
 docker-compose up -d
+```
+
+```sh
+http://localhost:8081/db
+```
+
+#### view
+
+```sh
+npm run dev
+```
+
+```sh
+http://localhost:7001/user
+```
+
+#### swagger
+
+```sh
+http://localhost:7001/swagger-ui.html
 ```
 
 ## Issue

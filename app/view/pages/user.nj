@@ -63,7 +63,7 @@
         },
         methods: {
           async create() {
-            await axios.post("/api/user", {
+            await axios.post("/create", {
               mobile: "18612113873",
               password: "Aa123456",
               realName: "连家二少爷"
